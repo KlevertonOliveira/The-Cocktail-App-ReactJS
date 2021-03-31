@@ -95,11 +95,12 @@ export default function CocktailInfo() {
             <p>
               <span className='drink-info'>Glass:</span> {glass}
             </p>
-            <p>
-              <span className='drink-info'>Instructions:</span> {instructions}
+            <p className='instructions'>
+              <span className='drink-info'>Instructions:</span>
+              {instructions}
             </p>
             <p>
-              <span className='drink-info'>Ingredients:</span>{' '}
+              <span className='drink-info'>Ingredients:</span>
               {ingredients.map((item, index) => {
                 return item ? (
                   <span key={index} className='ingredient'>
