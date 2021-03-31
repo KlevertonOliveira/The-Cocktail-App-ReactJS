@@ -1,0 +1,319 @@
+:root {
+  --dark: #1b1919;
+  --blue: #2575c0;
+  --white: rgba(250, 248, 245, 0.931);
+  --bs: 2px 5px 3px 0 rgba(0, 0, 0, 0.5), -1px -1px 1px 0 rgba(0, 0, 0, 0.25);
+  --ff-title: 'Lora', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(205.7, 33.3%, 95.9%);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  max-width: 100%;
+  height: 20rem;
+  width: auto;
+  object-fit: cover;
+}
+/* =============
+    Typography
+   =============
+*/
+
+h1,
+h2,
+h3,
+p,
+button {
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-family: var(--ff-title);
+}
+
+.logo {
+  font-family: var(--ff-title);
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin: 0;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--white);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* =============
+    Layout
+   =============
+*/
+
+/* Header */
+
+header {
+  background: var(--blue);
+  padding: 1.25rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 70.5rem;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navigation */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--dark);
+}
+
+/* ============ 
+  Media Queries
+  ============ */
+
+@media (max-width: 720px) {
+  header {
+    text-align: center;
+  }
+  .container-nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    padding: 1em;
+    margin: 1.5rem 0 0;
+  }
+}
+
+/* HOME */
+
+.form {
+  background-color: rgb(251, 250, 250);
+  max-width: 40rem;
+  box-shadow: var(--bs);
+  width: 80vw;
+  margin: 5rem auto 0;
+  padding: 3rem;
+}
+
+label {
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+input {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Cocktail Components */
+
+.grid-title {
+  font-size: 2.25rem;
+  margin: 6rem 0 4rem;
+  color: var(--dark);
+  letter-spacing: 8px;
+  font-weight: 700;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 5rem;
+  place-items: center;
+  margin-bottom: 5rem;
+}
+
+.cocktail-card {
+  background-color: var(--white);
+  box-shadow: var(--bs);
+  width: 20rem;
+  display: grid;
+  transition: transform 0.5s ease-in-out;
+}
+
+.cocktail-card:hover {
+  transform: scale(1.1);
+}
+
+.cocktail-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cocktail-card h2 {
+  font-size: 2rem;
+  font-family: var(--ff-title);
+}
+
+.cocktail-card h3 {
+  font-size: 1.1rem;
+}
+
+.cocktail-card p {
+  color: #707070;
+}
+
+.btn {
+  width: 40%;
+  margin: 0.5rem auto 0.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none;
+  transition: background-color linear 0.3s, color linear 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--dark);
+}
+
+.link-btn {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Other Pages (About, Error, Loading...)*/
+
+.other-pages-content h1,
+.cocktail-title {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+.other-pages-content p {
+  max-width: 60%;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+/* Cocktail Info */
+
+.cocktail-title {
+  font-size: 2.5rem;
+}
+
+.cocktail-content {
+  display: flex;
+  margin: 4rem 0 2.75rem;
+  gap: 2rem;
+}
+
+.cocktail-image {
+  flex-basis: 1 1 30%;
+}
+
+.cocktail-img {
+  width: 25rem;
+  height: auto;
+  object-position: center;
+}
+
+.cocktail-info {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cocktail-info p {
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.drink-info {
+  background: var(--dark);
+  color: var(--white);
+  padding: 0.125rem 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.ingredient {
+  background: var(--blue);
+  color: var(--white);
+  margin-right: 0.5rem;
+}
+
+.return {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.return > * {
+  flex-basis: 15%;
+}
