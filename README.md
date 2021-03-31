@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# The Cocktail App
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/KlevertonOliveira/TheCocktailApp---ReactJS/blob/master/LICENSE)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About the project / Sobre o projeto
 
-## Available Scripts
+https://klevoliveira-thecocktailapp.netlify.app/
 
-In the project directory, you can run:
+TheCocktailApp is a Front End application created with the objective of practicing the development of web applications using the ReactJS library. The application is inspired on the project called Cocktails by John Smilga in his course called Full React Course 2020 and it's main purpose is to practice the concept od React Routes.
 
-### `yarn start`
+The project consists of a set of cocktails, whose informations are fetched directly from an API, which are displayed to the user in cards using a grid system. The application provides a cocktail search bar that, when triggered, returns the result of the search to the user (either the cocktail found or a 'not found' message). Also, the user can interact with the presented drinks by hovering them and/or clicking on the 'Details' button inside each drink card. By clicking on the said button, the user is redirected to a page with more detailed information about the selected cocktail.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+///
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+TheCocktailApp é uma aplicação Front End criada com o objetivo de praticar o desenvolvimento de aplicações web utilizando a biblioteca ReactJS. O aplicativo é inspirado no projeto Cocktails de John Smilga em seu curso Full React Course 2020 e tem como objetivo principal praticar o conceito de React Routes.
 
-### `yarn test`
+O projeto consiste em um conjunto de coquetéis, cujas informações são buscadas diretamente de uma API, os quais são apresentados ao usuário em cartões através de um sistema de grid. O aplicativo fornece uma barra de pesquisa de coquetéis que, quando acionada, retorna o resultado da pesquisa ao usuário (seja o coquetel encontrado ou uma mensagem de 'não encontrado'). Além disso, o usuário pode interagir com as bebidas apresentadas passando o mouse sobre elas e/ou clicando no botão 'Details' dentro de cada cartão de bebida. Ao clicar no referido botão, o usuário é redirecionado para uma página com informações mais detalhadas sobre o coquetel selecionado. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Layout web
+![](assets/cocktailsApp-main1.png)
+![](assets/cocktailsApp-main2.png)
+![](assets/cocktail-Info.png)
 
-### `yarn build`
+# Technologies Used / Tecnologias utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Front end
+- HTML5
+- CSS3
+- JS ES6
+- ReactJS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment in production / Implantação em produção
+- Front end web: Netlify
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#  How to run the project / Como executar o projeto
 
-### `yarn eject`
+Prerequisites / Pré-requisitos: npm / yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Clone repository / Clonar repositório
+git clone https://github.com/KlevertonOliveira/TheCocktailApp---ReactJS
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Enter the project folder / Entrar na pasta do projeto
+cd thecocktailapp---ReactJS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Install dependencies / Instalar dependências
+yarn install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Run the project / Executar o projeto
+yarn start
+```
 
-## Learn More
+# Author / Autor
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+José Kleverton Yvens Oliveira
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+https://www.linkedin.com/in/kleverton-oliveira-1393ba1b8/
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
