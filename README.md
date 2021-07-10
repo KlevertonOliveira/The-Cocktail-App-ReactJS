@@ -1,5 +1,5 @@
 # The Cocktail App / App de Coquetel
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/KlevertonOliveira/Profile-Card-App-ReactJS/blob/master/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/KlevertonOliveira/The-Cocktail-App-ReactJS/blob/master/LICENSE)
 
 ---
 
